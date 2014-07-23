@@ -1,3 +1,6 @@
+# Ignore all emacs backup files
+*~
+
 # Object files
 *.o
 *.ko
