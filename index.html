@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+	
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palestine: Buried in Numbers</title>
+	<!-- A data visualization for the deaths in Palestine in July 2014 -->
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <script type="application/javascript" src="js/Chart.js"></script>
+    <script type="application/javascript" src="latestdata.js"></script>
+
+</head>
+
+<body>
+<!-- header -->	
+	<div class="row">
+		<div class= "large-2 medium-2 small-2 columns">
+         		<img data-interchange="[img/keffy.png, (default)], [img/keffy-small.png, (small)], [img/keffy.png, (large)], [img/keffy-medium.png, (medium)] ">
+		</div>
+	
+		<div class="large-10 medium-10 columns">
+		<br />
+		<h2>Palestine: Buried in Numbers </h2>
+		<br /> 
+		<h4> 
+		"I look forward to surviving. If I don't, remember that I wasn't Hamas or a militant, nor was I used as a human shield. I was at home."
+		<br />
+		- <a href="https://twitter.com/imPalestine"> Mohammed Suliman </a> 
+		</h4>		
+		<br />
+		<p>Data updated July 22, 2014 via <a href="http://www.imemc.org/article/68429"> IMEMC</a> (International Middle East Media Center)</p>
+	
+	</div>	
+	</div>	
+
+<!--days data -->
+	 <div class="row">
+	        <div class="large-7 medium-7 columns">
+			<div style="width: 100%">
+				<canvas id="daysCanvas" height="450" width="600"></canvas>
+			</div>
+		<small> * The horizontal axis represents the day in July, and the vertical axis is the number of deaths in that day. </small> 
+		</div>	
+		 <div class="large-5 medium-5 columns">
+			<br /> <br />			
+			<h4> Daily death count </h4>
+			<p> In the month of July 2014 (till the 21st), the death of 522 Palestinians have been confirmed by the Palestinian Ministry of Health. </p>
+			<p> "Over 3300 have been injured, including 822 children and 572 women, with some losing limbs and others disabled for life." -<a href="http://www.imemc.org/article/68429">IMEMC</a> </p> 
+		</div>
+	</div>		
+	<div class="row">
+		<div class="large-7 medium-7 large-push-5 medium-push-5 columns">
+			<div id="canvas-holder" style="width:100%">
+				<canvas id="placesCanvas" width="300" height="300" />
+			</div>
+			 <small> * The radial axis represents the total number of deaths in the highlighted areas. </small> 		
+		</div>
+		 <div class="large-5 medium-5 large-pull-7 medium-pull-7 columns">
+			<br /> <br />						
+			<h4> Target areas </h4>
+			<p> Gaza (red) saw the largest number of causalities followed by Khan Younis (green). </p>
+			<p>The Shaujeeya neighbourhood in Gaza alone witnessed a massacre of sixty people on 20 July.</p> 
+		</div>
+	</div> 
+	<div class="row">
+	        <div class="large-7 medium-7 columns">
+			<div style="width: 100%">
+				<canvas id="agesCanvas" height="450" width="600"></canvas>
+			</div>
+		<small> * The horizontal axis represents the age, and the vertical axis is the number of deaths to a person of that age. </small> 
+		</div>	
+		 <div class="large-5 medium-5 columns">
+			<br /> <br />			
+			<h4> Young to old </h4>
+			<p> More young Palestinans were buried than their older fellows, with the mid twenties seeing the greatest number of deaths.   </p> 
+		</div>
+	</div>	
+
+	<div class="row"> 
+		<br/> 
+		<p> <small>  &nbsp; &nbsp; Built on <a href="http://foundation.zurb.com/"> Foundation 5 </a> using <a href="http://www.chartjs.org/"> Chart.js </a> by <a href="http://faltastico.tumblr.com/"> Youssef Faltas </a>, 2014 
+		
+	 	 <br />
+ &nbsp; &nbsp;  Please contribute to this project on <a href="https://github.com/faltastic/Palestine-Buried-in-Numbers"> Github </a> </p>
+	 </div>
+
+<script src="js/gazaJuly.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/foundation/foundation.interchange.js"></script>
+<script>
+$(document).foundation();
+</script>
+
+</body>
+
+</html>
