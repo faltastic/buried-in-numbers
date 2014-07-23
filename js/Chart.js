@@ -47,8 +47,24 @@
 			// Boolean - If we should show the scale at all
 			showScale: true,
 
+//original
 			// Boolean - If we want to override with a hard coded scale
-			scaleOverride: true,
+			scaleOverride: false,
+
+/*			// ** Required if scaleOverride is true **
+			// Number - The number of steps in a hard coded scale
+			scaleSteps: null,
+			// Number - The value jump in the hard coded scale
+			scaleStepWidth: null,
+			// Number - The scale starting value
+			scaleStartValue: null,
+*/
+
+// Fix
+// scale override polar chart only
+			// Boolean - If we want to override with a hard coded scale
+
+			scaleOverridePolar: true,
 
 			// ** Required if scaleOverride is true **
 			// Number - The number of steps in a hard coded scale
@@ -57,18 +73,7 @@
 			scaleStepWidth: 25,
 			// Number - The scale starting value
 			scaleStartValue: 0,
-/* original
-			// Boolean - If we want to override with a hard coded scale
-			scaleOverride: false,
 
-			// ** Required if scaleOverride is true **
-			// Number - The number of steps in a hard coded scale
-			scaleSteps: null,
-			// Number - The value jump in the hard coded scale
-			scaleStepWidth: null,
-			// Number - The scale starting value
-			scaleStartValue: null,
-*/
 			// String - Colour of the scale line
 			scaleLineColor: "rgba(0,0,0,.1)",
 
@@ -2115,6 +2120,8 @@
 				display : this.options.showScale
 			};
 
+/* normal scaleOverride for bar chart */
+
 			if (this.options.scaleOverride){
 				helpers.extend(scaleOptions, {
 					calculateYRange: helpers.noop,
@@ -2886,7 +2893,8 @@
 				valuesArray.push(segment.value);
 			});
 
-			var scaleSizes = (this.options.scaleOverride) ?
+			var scaleSizes = (this.options.scaleOverridePolar) ?
+// using scaleOverridePolar instead of scaleOverride
 				{
 					steps: this.options.scaleSteps,
 					stepValue: this.options.scaleStepWidth,
