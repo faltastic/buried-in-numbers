@@ -2,9 +2,9 @@
 
 // setup the data
 
-var places = ["Gaza City", "Khan Younis", "Rafah", "Beit Hanoun", "Jabalia", "Shujaeyya"];
+var places = ["Gaza", "Khan Younis", "Rafah", "Beit Hanoun", "Jabalia", "Shujaeyya"];
 
-var daysJuly = [8,9,10,11,12,13,14,15,16,17,18,19,20,21];
+var daysJuly = [8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26];
 
 var ages = [0];
 
