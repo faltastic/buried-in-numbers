@@ -13,6 +13,7 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 
+
 </head>
 
 <body>
@@ -40,8 +41,49 @@
 		</div>	
 	</div>	
 
-<!--days data -->
-	 <div class="row">
+<!--families data -->
+	<div class="row">
+		<div class="large-7 medium-7 large-push-5 medium-push-5 columns">
+			<div style="width:100%">
+				<canvas id="familiesCanvas" width="300" height="300" />
+			</div>
+			 <small> * The radial axis represents the number of deaths in each age range. Age N/A means the age of the dead person is not available.</small> 	
+			<br / > <br />	
+		</div>
+		 <div class="large-5 medium-5 large-pull-7 medium-pull-7 columns">
+			<br /> <br />						
+			<h4> Families that are no longer </h4>
+			<p> Nine of the most devastated families by the ongoing Gaza genocide. </p>
+			<p> This chart show how many children, teenagers, adults, and elders each of these families lost. </p>
+			<br />
+			<img src="img/family-legend.png">
+		</div>
+	</div> 
+
+
+	<div class="row" id="morefam">
+		<div class="large-7 medium-7 columns">
+			
+			<div style="width:100%">
+				<canvas id="familiesCanvasAlBatsh" width="300" height="300" />
+			</div>
+		</div>		
+		<div class="large-5 medium-5  columns">
+			<br /> <br / > 
+			<h4 class="text-center"> Al Batsh Family </h4>
+			<p> The most devasted family was Al Batsh. On 12 July 2014, these 17 members of Al Batsh family were killed in Khan Younis.</p>
+			<ul> 
+			<li> Nahedh Na’im - 41 years old </li><li> Baha’ Majed - 28 </li><li> Qusai Issam - 12 </li><li>Aziza Youssef - 59 </li><li> Ahmed No'man - 27 				</li><li> Mohammed Issam - 17 </li><li> Yahia 'Ala - 18 </li><li> Jalal Majed - 26 </li><li> Mahmoud Majed - 26 </li><li> 
+			Majed Sobhi - age unknown </li><li> Marwa Majed - 25 </li><li> Khaled Majed - 20 </li><li> Manar Majed - 13 </li><li> Amal Hussein - 49 			</li><li> Anas Ala' - 10 </li><li>
+			Qusai Ala' - 20</li>
+			</ul> 
+			<br /> <br />   		
+		</div>
+		
+		
+	</div> 
+<!--days data -->	 
+	<div class="row">
 	        <div class="large-7 medium-7 columns">
 			<div style="width: 100%">
 				<canvas id="daysCanvas" height="450" width="600"></canvas>
@@ -55,6 +97,7 @@
 			<p> "Over 5800 have been injured, including 822 children and 572 women, with some losing limbs and others disabled for life." -<a href="http://www.imemc.org/article/68429">IMEMC</a> </p> 
 		</div>
 	</div>		
+<!--places data -->
 	<div class="row">
 		<div class="large-7 medium-7 large-push-5 medium-push-5 columns">
 			<div id="canvas-holder" style="width:100%">
@@ -69,6 +112,7 @@
 			<p>The Shaujeeya neighbourhood in Gaza alone witnessed a massacre of sixty people on July 20.</p> 
 		</div>
 	</div> 
+<!--age data -->	
 	<div class="row">
 	        <div class="large-7 medium-7 columns">
 			<div style="width: 100%">
@@ -95,6 +139,7 @@
 <script src="js/vendor/jquery.js"></script>
 <script src="js/foundation.min.js"></script>
 <script src="js/foundation/foundation.interchange.js"></script>
+
 <script>
 $(document).foundation();
 </script>
